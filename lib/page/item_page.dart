@@ -64,7 +64,7 @@ class ItemPage extends StatelessWidget {
                     Divider(),
                     Container(
                       alignment: Alignment.centerLeft,
-                      child:Text (
+                      child:Text ('Жанр: '
                         '${data.genres}',textAlign: TextAlign.justify, ),
                     ),
 
@@ -82,7 +82,7 @@ class ItemPage extends StatelessWidget {
 
 
                     Divider(),
-                    Text(data.description,textAlign: TextAlign.justify,),
+                    Text('Описание: '+data.description,textAlign: TextAlign.justify,),
 
 
 

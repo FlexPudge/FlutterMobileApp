@@ -14,13 +14,11 @@ class HomePage extends StatelessWidget{
 
   @override
   Widget build (BuildContext context){
-    
-    
     final productData = Provider.of<ProductDataProvider>(context);
-
     final productCatalog = Provider.of<ProductForLoadsDataProvider>(context);
 
     return Scaffold(
+ 
       body: SafeArea(
         child: Container(
           height: MediaQuery.of(context).size.height - 50,
@@ -32,6 +30,7 @@ class HomePage extends StatelessWidget{
             )
           ),
           child: ListView(
+
             padding: const EdgeInsets.all(10.0),
             children: <Widget>[
               Container(
@@ -77,3 +76,4 @@ class HomePage extends StatelessWidget{
     );
   }
 }
+
